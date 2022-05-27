@@ -6,7 +6,6 @@ for i in inp:
         x += 1
     elif i == ')':
         x -= 1
-        # print(x)
         if x == -1:
             break
 if x == 0:
