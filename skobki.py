@@ -1,5 +1,5 @@
 print("Введите скобочную последовательность из '(' и ')' ")
-def skobka(inp):
+def  skobka(inp):
     x = 0
     for i in inp:
         if i == '(':
