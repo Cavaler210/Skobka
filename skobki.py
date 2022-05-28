@@ -17,7 +17,7 @@ def skobka(inp):
     elif x != 0:
         answer = "wrong"
     return answer
-print(skobka(input()))
+#print(skobka(input()))
 
 
 
