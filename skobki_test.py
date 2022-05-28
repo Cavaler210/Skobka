@@ -12,5 +12,6 @@ class TestSkobki(unittest.TestCase):
         self.assertEqual(skobka(")"), skobka(")"))
         self.assertEqual(skobka(")("),skobka(")("))
         self.assertEqual(skobka("(()))"),skobka("(()))"))
+
 if __name__=="__main__":
     unittest.main()
