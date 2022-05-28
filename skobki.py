@@ -9,15 +9,16 @@ def skobka(inp):
 
         elif i == ')':
             x -= 1
-            if x << 0:
+            if x ==- 1:
                 break
+
 
     if x == 0:
         answer="правильная последовательность"
     elif x != 0:
         answer = "wrong"
     return answer
-#print(skobka(input()))
+print(skobka("(())"))
 
 
 
