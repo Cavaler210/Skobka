@@ -3,17 +3,24 @@ from skobki import skobka
 
 
 class TestSkobki(unittest.TestCase):
-    def test_positive_sequence(self):  # тестируем правильную последовательность
+    def test_1(self):  # тестируем правильную последовательность
+        self.assertEqual(skobka("()"), True)
 
-        self.assertEqual(skobka("()"), "правильная последовательность")
-        self.assertEqual(skobka(""), "правильная последовательность")
-        self.assertEqual(skobka("((()))"), "правильная последовательность")
+    def test_2(self):
+        self.assertEqual(skobka(""), True)
 
-    def test_not(self):
-        self.assertEqual(skobka(")"), "wrong")
-        self.assertEqual(skobka("(()))"),"wrong")
-        self.assertEqual(skobka(")()("),"wrong")
+    def test_3(self):
+        self.assertEqual(skobka("((()))"), True)
+
+    def test_4(self):
+        self.assertEqual(skobka(")"), False)
+
+    def test_5(self):
+        self.assertEqual(skobka("(()))"), False)
+
+    def test_6(self):
+        self.assertEqual(skobka(")()("), False)
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     unittest.main()

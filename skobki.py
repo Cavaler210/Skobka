@@ -1,7 +1,6 @@
 # print("Введите скобочную последовательность из '(' и ')' ")
 
 def skobka(inp):
-
     x = 0
     for i in inp:
         if i == '(':
@@ -9,16 +8,12 @@ def skobka(inp):
 
         elif i == ')':
             x -= 1
-            if x ==- 1:
+            if x == - 1:
                 break
 
-
     if x == 0:
-        answer="правильная последовательность"
+        answer = True
     elif x != 0:
-        answer = "wrong"
+        answer = False
     return answer
-#print(skobka())
-
-
-
+# print(skobka())
