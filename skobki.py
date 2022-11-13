@@ -16,4 +16,4 @@ def skobka(inp):
     elif x != 0:
         answer = False
     return answer
-#print(skobka())
+ #print(skobka())
